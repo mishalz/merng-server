@@ -6,7 +6,7 @@ const resolvers = require("./graphQL/resolvers");
 const typeDefs = require("./graphQL/typeDefs");
 const { db_url } = require("./config.js");
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 const pubsub = new PubSub();
 const server = new ApolloServer({
   typeDefs,
